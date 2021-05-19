@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="css3.css">
+</head>
+<body>
+	<h1>Peak Performers</h1>
+	<div>
+	 <?php
+	if (isset($_POST["create"])){
+		echo "User submitted.";
+	}
+	?>
+</div>
+	<div class="register">
+		<h2>Programmers Registration!</h2>
+		<form method="post" id="register" action="">
+			
+			<label>First Name:</label><br>
+			<input type="text" name="Fname" id="name" placeholder="First Name"><br><br>
+			<label>Middle Name:</label><br>
+			<input type="text" name="Mname" id="name" placeholder="Middle Name"><br><br>
+			<label>Last Name:</label><br>
+			<input type="text" name="Lname" id="name" placeholder="Last Name"><br><br>
+			<label>Mobile Number:</label><br>
+			<select id="ph">
+				<option>Argentina +55</option>
+				<option>Australia +61</option>
+				<option>Bahrain +973</option>
+				<option>Canada +1</option>
+				<option>Philippines +63</option>
+			</select>
+			<input type="Number" name="Mnum" id="num" placeholder="Enter Mobile No."><br><br>
+			<label>Email:</label><br>
+			<input type="email" name="email" id="name" placeholder="Email"><br><br>
+			<label>User Name:</label><br>
+			<input type="text" name="Uname" id="name" placeholder="User Name"><br><br>
+			<label>Password:</label><br>
+			<input type="Password" name="pass" id="name" placeholder="Password"><br><br>
+			<label>Confirm Password:</label><br>
+			<input type="Password" name="pass" id="name" placeholder="Confirm Password"><br><br>
+			<input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;&nbsp;
+			<input type="radio" name="Female" id="female"><span id="female">&nbsp; female</span>&nbsp;&nbsp;
+			<input type="radio" name="other" id="other"><span id="other">&nbsp; Other</span>&nbsp;&nbsp;<br>
+			<button onclick="myFunction()" value="submit" id="sub">Submit</button>
+			<a href="Log in.html">Back</a>
+			<script>
+		function myFunction() {
+		  alert("Done Creating Your Account!");
+		}
+		</script>
+		</form>
+	</div>
+</body>
+</html>
